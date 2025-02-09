@@ -1,24 +1,64 @@
-# AlugaVale - Sistema de Locação de Veículos
+# Sistema de Locação de Veículos - AlugaVale
 
-O **AlugaVale** é um sistema de locação de veículos onde locatários podem pesquisar veículos disponíveis, realizar reservas, e efetuar o pagamento. O sistema possui uma interface simples e fácil de usar, com integração para pagamentos via Mercado Pago.
+AlugaVale é um sistema de locação de veículos focado em locatários e locadores. Com uma interface simples e intuitiva, o sistema permite que locatários busquem e reservem veículos aprovados por locadores, além de gerenciar suas reservas de forma eficiente.
 
 ## Funcionalidades
 
-### Para Locatários:
-- **Cadastro de Locatário**: Criação de conta de locatário para efetuar reservas.
-- **Buscar Veículos**: Visualizar veículos disponíveis para locação.
-- **Reservar Veículos**: Efetuar reservas de veículos com a opção de realizar pagamento via Mercado Pago.
-- **Minhas Reservas**: Acompanhar as reservas realizadas.
+- **Cadastro de Locatário e Locador**: Sistema de login para ambos os tipos de usuários.
+- **Reserva de Veículos**: Locatários podem visualizar e reservar veículos disponíveis.
+- **Gestão de Reservas**: Locatários podem ver o status de suas reservas e fazer pagamentos.
+- **Pagamento via Mercado Pago**: Integração para pagamento de reservas.
+- **Busca de Veículos**: Locatários podem filtrar veículos disponíveis por modelo, marca, ano e valor de diária.
 
-### Para Locadores:
-- **Cadastro de Locador**: Criação de conta para o locador listar seus veículos.
-- **Gerenciar Veículos**: Cadastro e gerenciamento de veículos para locação.
-- **Controle de Reservas**: Acompanhar as reservas de seus veículos.
+## Tecnologias Utilizadas
 
-## Tecnologias Usadas
-- **PHP**: Linguagem de programação principal para o backend.
-- **MySQL**: Banco de dados para armazenar informações de usuários, veículos, reservas e pagamentos.
-- **Bootstrap 5**: Framework CSS para um layout responsivo e moderno.
-- **Mercado Pago API**: Integração com o Mercado Pago para pagamento via **Pix**.
-- **PDO**: Utilizado para interações seguras com o banco de dados.
+- **Backend**: PHP
+- **Banco de Dados**: MySQL
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Integrações**: Mercado Pago para pagamentos
 
+## Como Utilizar
+
+1. Clone o repositório para sua máquina local:
+
+    ```bash
+    git clone https://github.com/jeanzin3131/alugavale.git
+    ```
+
+2. Acesse o diretório do projeto:
+
+    ```bash
+    cd alugavale
+    ```
+
+3. Crie seu banco de dados MySQL e importe as tabelas necessárias.
+4. Configure a conexão com o banco de dados em `config/db.php`.
+5. Realize a configuração do Mercado Pago em `config/mercadopago.php`.
+
+## Instalação do Mercado Pago
+
+Para a integração com Mercado Pago, siga os passos abaixo:
+
+1. Baixe o SDK do Mercado Pago utilizando Composer:
+
+    ```bash
+    composer require mercadopago/dx-php
+    ```
+
+2. Configure as credenciais da sua conta Mercado Pago no arquivo `config/mercadopago.php`.
+
+## Vídeo de Demonstração
+
+Assista ao vídeo abaixo para ver como o sistema de locação funciona:
+
+[![Vídeo do Sistema](https://img.youtube.com/vi/dbafjztDPMA/maxresdefault.jpg)](https://youtube.com/shorts/dbafjztDPMA?feature=share)
+
+## Contato
+
+Caso tenha interesse em utilizar o sistema, entre em contato pelo WhatsApp:
+
+[**Clique aqui para entrar em contato**](https://wa.me/5513981628930)
+
+## Licença
+
+Este projeto é de código aberto e distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
