@@ -176,15 +176,7 @@
             }
         });
 
-        // Botão para enviar a CNH
-        uploadButton.addEventListener('click', () => {
-            // Aqui, você pode enviar o arquivo para o servidor
-            alert('CNH enviada com sucesso!');
-        });
-        
-        
-const verifyButton = document.getElementById('verifyButton');
-const uploadButton = document.getElementById('uploadButton');
+
 
 // Função para enviar os arquivos para o servidor
 function uploadFiles() {
