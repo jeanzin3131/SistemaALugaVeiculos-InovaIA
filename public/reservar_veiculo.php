@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="dashboard_locatario.php"><i class="fas fa-car"></i> AlugaVale - Locatário</a>
+            <a class="navbar-brand" href="dashboard_locatario.php"><i class="fas fa-car"></i> DirigeAí - Locatário</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>

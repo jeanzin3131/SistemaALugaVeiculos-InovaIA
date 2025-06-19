@@ -2,7 +2,7 @@
 try {
     $host = 'localhost';
     $port = 8001; // Verifique se está correta a porta configurada
-    $dbname = 'alugavale'; // Substitua pelo nome do seu banco
+    $dbname = 'dirigeai'; // Substitua pelo nome do seu banco
     $username = 'root'; // Substitua pelo usuário do banco
     $password = ''; // Substitua pela senha do banco
 
