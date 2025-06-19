@@ -1,6 +1,6 @@
-# Sistema de Locação de Veículos - AlugaVale
+# Sistema de Locação de Veículos - DirigeAí
 
-AlugaVale é um sistema de locação de veículos focado em locatários e locadores. Com uma interface simples e intuitiva, o sistema permite que locatários busquem e reservem veículos aprovados por locadores, além de gerenciar suas reservas de forma eficiente.
+DirigeAí é um sistema de locação de veículos focado em locatários e locadores. Com uma interface simples e intuitiva, o sistema permite que locatários busquem e reservem veículos aprovados por locadores, além de gerenciar suas reservas de forma eficiente.
 
 ## Funcionalidades
 
@@ -22,13 +22,13 @@ AlugaVale é um sistema de locação de veículos focado em locatários e locado
 1. Clone o repositório para sua máquina local:
 
     ```bash
-    git clone https://github.com/jeanzin3131/alugavale.git
+    git clone https://github.com/jeanzin3131/dirigeai.git
     ```
 
 2. Acesse o diretório do projeto:
 
     ```bash
-    cd alugavale
+    cd dirigeai
     ```
 
 3. Crie seu banco de dados MySQL e importe as tabelas necessárias.
