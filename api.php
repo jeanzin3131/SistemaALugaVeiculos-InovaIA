@@ -1,8 +1,17 @@
 <?php
 
 // Diretórios para armazenar os arquivos
-define('SELFIE_UPLOAD_DIR', 'uploads/selfies/');
-define('CNH_UPLOAD_DIR', 'uploads/cnhs/');
+define('SELFIE_UPLOAD_DIR', __DIR__ . '/uploads/selfies/');
+define('CNH_UPLOAD_DIR', __DIR__ . '/uploads/cnhs/');
+
+// Garantir que os diretórios existam
+if (!is_dir(SELFIE_UPLOAD_DIR)) {
+    mkdir(SELFIE_UPLOAD_DIR, 0777, true);
+}
+
+if (!is_dir(CNH_UPLOAD_DIR)) {
+    mkdir(CNH_UPLOAD_DIR, 0777, true);
+}
 
 // Função para verificar se o arquivo é válido
 function isValidImage($file) {
