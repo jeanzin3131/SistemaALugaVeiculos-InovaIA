@@ -1,0 +1,40 @@
+Passo a Passo para Instalação do Sistema DirigeAí
+
+1. **Pré-requisitos**
+   - PHP 7.4 ou superior instalado.
+   - Composer instalado (https://getcomposer.org/).
+   - Servidor MySQL para o banco de dados.
+
+2. **Clonar o repositório**
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd dirigeai
+   ```
+
+3. **Instalar as dependências**
+   ```bash
+   composer install
+   ```
+
+4. **Configurar variáveis de ambiente**
+   - Copie `.env.example` para `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Edite o arquivo `.env` com as credenciais do banco de dados e o token do Mercado Pago.
+
+5. **Importar o banco de dados**
+   - Crie um banco de dados MySQL com o mesmo nome especificado em `DB_NAME`.
+   - Importe o arquivo `database.sql` para criar as tabelas necessárias.
+     ```bash
+     mysql -u usuario -p nome_do_banco < database.sql
+     ```
+
+6. **Configurar o servidor web**
+   - Aponte o document root do seu servidor para a pasta `public` do projeto.
+   - Certifique-se de que o PHP esteja habilitado e configurado para processar os arquivos.
+
+7. **Acessar a aplicação**
+   - Abra o navegador e acesse o endereço configurado para o servidor.
+   - O arquivo `public/index.html` será a porta de entrada do sistema.
+
