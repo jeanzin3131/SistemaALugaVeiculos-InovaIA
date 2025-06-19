@@ -8,7 +8,7 @@ if (isset($evento['type']) && $evento['type'] == "payment") {
     $payment_id = $evento['data']['id'];
 
     // Consultar o status do pagamento na API do Mercado Pago
-    $access_token = "APP_USR-3911994694042579-020201-9c00076201ed71d02162dc7a91f487dc-2246647458";
+    $access_token = getenv('MERCADOPAGO_ACCESS_TOKEN');
     $url = "https://api.mercadopago.com/v1/payments/$payment_id";
 
     $ch = curl_init($url);

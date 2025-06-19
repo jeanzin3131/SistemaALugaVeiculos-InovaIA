@@ -1,7 +1,10 @@
 <?php
 // Caminho para o autoload dentro da pasta config
-require_once __DIR__ . '/autoload.php';  // Ou o caminho correto, caso tenha movido para uma subpasta
+require_once __DIR__ . '/autoload.php';  // Ajuste o caminho se necessário
 
-// Agora o SDK do Mercado Pago estará disponível
-MercadoPago\SDK::setAccessToken('TEST-3911994694042579-020201-bb9af4d14ed4b7a3f91b6fb3e54114ce-2246647458');
+// Configure the Mercado Pago SDK using an access token from the environment
+$token = getenv('MERCADOPAGO_ACCESS_TOKEN');
+if ($token) {
+    MercadoPago\SDK::setAccessToken($token);
+}
 ?>
