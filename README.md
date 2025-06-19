@@ -32,8 +32,8 @@ DirigeAí é um sistema de locação de veículos focado em locatários e locado
     ```
 
 3. Crie seu banco de dados MySQL e importe as tabelas necessárias.
-4. Configure a conexão com o banco de dados em `config/db.php`.
-5. Realize a configuração do Mercado Pago em `config/mercadopago.php`.
+4. Copie o arquivo `.env.example` para `.env` e preencha com suas credenciais de banco de dados e token do Mercado Pago.
+5. A aplicação lerá essas variáveis automaticamente ao iniciar.
 
 ## Instalação do Mercado Pago
 

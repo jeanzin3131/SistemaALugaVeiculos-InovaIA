@@ -1,11 +1,6 @@
 <?php
-// Conexão com o banco de dados
-try {
-    $pdo = new PDO("mysql:host=localhost;port=8001;dbname=dirigeai", "root", "");
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Erro na conexão com o banco de dados: " . $e->getMessage());
-}
+// Conexão com o banco de dados usando configuração compartilhada
+require_once '../config/db.php';
 
 // Capturar os dados do formulário
 $nome = $_POST['nome'] ?? null;

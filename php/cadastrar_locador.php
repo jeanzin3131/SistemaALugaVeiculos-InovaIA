@@ -5,7 +5,10 @@ require_once '../config/db.php'; // Conexão com o banco de dados
 
 // Configuração do Mercado Pago
 $config = new MercadoPagoConfig();
-$config->setAccessToken('TEST-3911994694042579-020201-bb9af4d14ed4b7a3f91b6fb3e54114ce-2246647458');
+$token = getenv('MERCADOPAGO_ACCESS_TOKEN');
+if ($token) {
+    $config->setAccessToken($token);
+}
 
 // Verifica se o formulário foi enviado via POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
