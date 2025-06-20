@@ -12,7 +12,7 @@ $query = "
     SELECT 
         (SELECT COUNT(*) FROM usuarios) AS total_usuarios,
         (SELECT COUNT(*) FROM veiculos) AS total_veiculos,
-        (SELECT COUNT(*) FROM locacoes WHERE status = 'ativa') AS locacoes_ativas,
+        (SELECT COUNT(*) FROM reservas WHERE status_reserva IN ('aceita','confirmada','pago')) AS locacoes_ativas,
         (SELECT COUNT(*) FROM documentos_usuarios WHERE status = 'pendente') AS documentos_pendentes
 ";
 $stmt = $pdo->prepare($query);
